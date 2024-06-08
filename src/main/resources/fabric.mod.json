@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "tutorialmod",
+	"version": "${version}",
+	"name": "TutorialMod",
+	"description": "This is a tutorial mod made by cbear",
+	"authors": [
+		"cbear"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/tutorialmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.colin.tutorialmod.TutorialMod"
+		],
+		"client": [
+			"net.colin.tutorialmod.TutorialModClient"
+		],
+		"fabric-datagen": [
+			"net.colin.tutorialmod.TutorialModDataGenerator"
+		]
+	},
+	"mixins": [
+		"tutorialmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
